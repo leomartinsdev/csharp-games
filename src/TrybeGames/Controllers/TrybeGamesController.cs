@@ -47,7 +47,8 @@ public class TrybeGamesController
             Console.WriteLine("Opção inválida! Tente novamente.");
             return;
         }
-        try {
+        try
+        {
             var games = database.GetGamesDevelopedBy(gameStudio);
             Console.WriteLine("Jogos do estúdio de jogos " + gameStudio.Name + ":");
             foreach (var game in games)
@@ -71,7 +72,8 @@ public class TrybeGamesController
             Console.WriteLine("Pessoa jogadora não encontrada!");
             return;
         }
-        try {
+        try
+        {
             var games = database.GetGamesPlayedBy(player);
             if (games.Count() == 0)
             {
@@ -101,7 +103,8 @@ public class TrybeGamesController
             Console.WriteLine("Pessoa jogadora não encontrada!");
             return;
         }
-        try {
+        try
+        {
             var games = database.GetGamesOwnedBy(player);
             Console.WriteLine("Jogos comprados pela pessoa jogadora " + player.Name + ":");
             foreach (var game in games)
@@ -137,8 +140,18 @@ public class TrybeGamesController
     // 2. Crie a funcionalidade de adicionar um novo estúdio de jogos ao banco de dados
     public void AddGameStudio()
     {
-        // implementar
-        Console.WriteLine("Ainda não é possível realizar essa funcionalidade!");
+        int studioId = 1;
+
+        Console.WriteLine("Insira o nome do estúdio:");
+        string newStudioName = Console.ReadLine();
+
+        var studioToAdd = new GameStudio
+        {
+            Id = studioId++,
+            Name = newStudioName
+        };
+
+        database.GameStudios.Add(studioToAdd);
     }
 
     // 3. Crie a funcionalidade de adicionar novo Jogo ao Banco de dados
