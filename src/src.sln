@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.30114.105
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrybeGames", "TrybeGames\TrybeGames.csproj", "{58522772-6D1B-4753-86BE-48DA26C0DEA4}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpGames", "CSharpGames\CSharpGames.csproj", "{58522772-6D1B-4753-86BE-48DA26C0DEA4}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TrybeGames.Test", "TrybeGames.Test\TrybeGames.Test.csproj", "{F56708FD-FA0B-48F3-B568-E5E7A4963F89}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CSharpGames.Test", "CSharpGames.Test\CSharpGames.Test.csproj", "{F56708FD-FA0B-48F3-B568-E5E7A4963F89}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

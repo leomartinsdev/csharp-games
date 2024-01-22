@@ -1,18 +1,18 @@
 using Xunit;
 using System;
 using FluentAssertions;
-using TrybeGames;
+using CSharpGames;
 using Moq;
 
-namespace TrybeGames.Test;
+namespace CSharpGames.Test;
 
 [Collection("Sequential")]
-public class TestTrybeGamesDatabase
+public class TestCSharpGamesDatabase
 {
     // 10. Implemente os testes da funcionalidade de buscar jogos jogados por uma pessoa jogadora
     [Theory(DisplayName = "Deve testar se GetGamesPlayedBy retorna jogos jogados pela pessoa jogadora corretamente.")]
     [MemberData(nameof(DataTestGetGamesPlayedBy))]
-    public void TestGetGamesPlayedBy(TrybeGamesDatabase databaseEntry, int playerIdEntry, List<Game> expected)
+    public void TestGetGamesPlayedBy(CSharpGamesDatabase databaseEntry, int playerIdEntry, List<Game> expected)
     {
         throw new NotImplementedException();
 
@@ -23,10 +23,10 @@ public class TestTrybeGamesDatabase
         // Assert
     }
 
-    public static TheoryData<TrybeGamesDatabase, int, List<Game>> DataTestGetGamesPlayedBy => new TheoryData<TrybeGamesDatabase, int, List<Game>>
+    public static TheoryData<CSharpGamesDatabase, int, List<Game>> DataTestGetGamesPlayedBy => new TheoryData<CSharpGamesDatabase, int, List<Game>>
     {
         {
-            new TrybeGamesDatabase
+            new CSharpGamesDatabase
             {
                 Games = new List<Game>
                 {

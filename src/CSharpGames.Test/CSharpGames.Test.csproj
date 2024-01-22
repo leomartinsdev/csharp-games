@@ -2,7 +2,7 @@
 
   <PropertyGroup>
     <TargetFramework>net6.0</TargetFramework>
-    <RootNamespace>TrybeGames.Test</RootNamespace>
+    <RootNamespace>CSharpGames.Test</RootNamespace>
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
 
@@ -26,7 +26,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\TrybeGames\TrybeGames.csproj" />
+    <ProjectReference Include="..\CSharpGames\CSharpGames.csproj" />
   </ItemGroup>
 
 </Project>

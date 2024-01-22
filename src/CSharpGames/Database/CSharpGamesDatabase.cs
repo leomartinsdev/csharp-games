@@ -1,9 +1,9 @@
 using System.Data.Common;
 using System.Security.Cryptography;
 
-namespace TrybeGames;
+namespace CSharpGames;
 
-public class TrybeGamesDatabase
+public class CSharpGamesDatabase
 {
     public List<Game> Games = new List<Game>();
 

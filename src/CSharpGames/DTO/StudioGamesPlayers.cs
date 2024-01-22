@@ -1,4 +1,4 @@
-namespace TrybeGames;
+namespace CSharpGames;
 public class GamePlayer
 {
     public string GameName = "";

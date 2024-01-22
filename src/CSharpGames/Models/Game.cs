@@ -1,4 +1,4 @@
-namespace TrybeGames;
+namespace CSharpGames;
 
 public enum GameType {
     Action,

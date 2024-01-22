@@ -1,5 +1,5 @@
 ﻿using System;
-using TrybeGames;
+using CSharpGames;
 
 class People
 {
@@ -10,7 +10,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        var database = new TrybeGamesDatabase(){
+        var database = new CSharpGamesDatabase(){
             Games = new List<Game>(){
                 new Game(){
                     Id = 1,
@@ -68,11 +68,11 @@ class Program
             },
         };
 
-        var controller = new TrybeGamesController(database, new ConsoleWrapper());
+        var controller = new CSharpGamesController(database, new ConsoleWrapper());
 
-        Console.WriteLine("Boas vindas ao sistema de gerenciamento de jogos Trybe Games!");
+        Console.WriteLine("Boas vindas ao sistema de gerenciamento de jogos CSharp Games!");
         MainMenuLoop(controller);
-        Console.WriteLine("Obrigado por usar o sistema de gerenciamento de jogos Trybe Games!");
+        Console.WriteLine("Obrigado por usar o sistema de gerenciamento de jogos CSharp Games!");
     }
 
     public static void PrintMainMenu()
@@ -116,7 +116,7 @@ class Program
         Console.WriteLine("4 - Voltar");
     }
 
-    public static void MainMenuLoop(TrybeGamesController controller)
+    public static void MainMenuLoop(CSharpGamesController controller)
     {
         var menu = 0;
         while (menu != 5)
@@ -146,7 +146,7 @@ class Program
         }
     }
 
-    public static void GameMenuLoop(TrybeGamesController controller)
+    public static void GameMenuLoop(CSharpGamesController controller)
     {
         var game = controller.SelectGame(controller.database.Games);
         if (game == null)
@@ -180,7 +180,7 @@ class Program
         Console.WriteLine("Voltando ao menu principal...");
     }
 
-    public static void PlayerMenuLoop(TrybeGamesController controller)
+    public static void PlayerMenuLoop(CSharpGamesController controller)
     {
         var player = controller.SelectPlayer(controller.database.Players);
         if (player == null)
@@ -211,7 +211,7 @@ class Program
         Console.WriteLine("Voltando ao menu principal...");
     }
 
-    public static void QueryMenuLoop(TrybeGamesController controller)
+    public static void QueryMenuLoop(CSharpGamesController controller)
     {
         var menu = 0;
         while (menu != 4)
@@ -239,7 +239,7 @@ class Program
         Console.WriteLine("Voltando ao menu principal...");
     }
 
-    public static void AddMenuLoop(TrybeGamesController controller)
+    public static void AddMenuLoop(CSharpGamesController controller)
     {
         var menu = 0;
         while (menu != 4)

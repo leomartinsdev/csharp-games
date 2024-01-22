@@ -1,14 +1,14 @@
 using System.Data;
 using System.Globalization;
 
-namespace TrybeGames;
-public class TrybeGamesController
+namespace CSharpGames;
+public class CSharpGamesController
 {
-    public TrybeGamesDatabase database;
+    public CSharpGamesDatabase database;
 
     public IConsole Console;
 
-    public TrybeGamesController(TrybeGamesDatabase database, IConsole console)
+    public CSharpGamesController(CSharpGamesDatabase database, IConsole console)
     {
         this.database = database;
         this.Console = console;
