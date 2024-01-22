@@ -1,4 +1,4 @@
-# Csharp Games 🎮
+# CSharp Games 🎮
 Projeto de jogo desenvolvido em C#. O objetivo foi implementar métodos que manipulam coleções, realizam consultas LINQ e muito mais!
 <br><br>
 O projeto foi feito utilizando C#, .NET 6.0, e LINQ.<br><br>
